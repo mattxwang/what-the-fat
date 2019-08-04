@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>🎉 happy birthday juan!</title>
+        <meta name="description" content="it's the birthday of our favourite fat dog!">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/death-192.png">
+        <style>
+            body{
+                background-color: pink;
+                color: white;
+                font-family: 'Raleway', sans-serif;
+                min-height: 100vh;
+                font-size: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            a {
+                color: white;
+            }
+            a:hover{
+                color: white;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <span class="message"></span>
+        </div>
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        function wow(){
+            alert("video coming soon!")
+        }
+        var options = {
+            strings: [
+                "🎉 Happy Birthday Juan! 🎉 ^1000", 
+                "20 is a <u><b>#fat</b></u> number ^500",
+                "We're sorry we couldn't be there in-person for this huge day :( ^500",
+                "However, we still have a few things to say... ^500",
+                "<a href='#' onclick='wow()'>what are those</a>"
+            ],
+            typeSpeed: 50
+        }
+
+        var typed = new Typed(".message", options);
+    </script>
+</html>
