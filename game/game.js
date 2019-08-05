@@ -339,7 +339,7 @@ class Player {
   }
   // player drawing animation, includes dealing with spritesheets
   draw(){
-    var srcString = "resources/player/kirby";
+    var srcString = "resources/Player/kirby";
     var needs_sprite = false;
     if (this.jumping === true || this.climbing === true){
       srcString += "Up";
