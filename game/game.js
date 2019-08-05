@@ -662,14 +662,11 @@ var beginHit = false;
 function beginGame(){
   if (beginHit){
     restartGame()
-    beginHit = false;
   }
-  else{
-    started = true;
-    titleMusic.pause();
-    backgroundMusic.play();
-    beginHit = true;
-  }
+  started = true;
+  titleMusic.pause();
+  backgroundMusic.play();
+  beginHit = true;
 }
 function restartGame(){
   backgroundMusic.pause();
@@ -762,3 +759,13 @@ window.addEventListener("keydown", function (event) {
 window.addEventListener("keyup", function (event) {
     delete keysDown[event.keyCode];
 });
+
+// juan you shouldn't look here :))))))
+
+function winGame(){
+  console.log("Wow, can't believe you actually played my crap game!")
+  console.log("Anyways, I'm sure you want the clue and to know what the next puzzle is.")
+  console.log("Your next clue is...")
+  console.log("Head to http://whatthefatdog.com/ to figure it out :)")
+  return "fat dog"
+}

@@ -8,19 +8,40 @@
 		<meta name="description" content="juan luvs those games">
 		<link rel="icon" href="css/favicon.ico" />
 		<style>
+			/* this css is bad. don't judge */
 			body{
 				background-color: pink;
+				text-align: center;
+			}
+			button {
+				font-size: 1.5em;
+				display:inline-block;
+				color:#fff;
+				background-color: pink;
+				margin:.5rem .5rem;
+				padding:.125rem 1rem;
+				text-decoration:none;
+				border-radius:3px;
+				border-color: white;
+				line-height:1.5;
+			}
+			button:hover { 
+				text-decoration:none;
+				background-color: white;
+				color: pink;
 			}
 		</style>
 	</head>
 	<body>
-		<div style="text-align:center;" id="game-container">
-			<canvas id="game-canvas" height="600" width="1250"></canvas>
-			</br>
-			<button class="btn btn-primary" id="game-button" onclick="beginGame()">start</button>
-		</div>
+		<canvas id="game-canvas" height="600" width="1250"></canvas>
+		</br>
+		<button id="game-button" onclick="beginGame()">start</button>
 	</body>
 	<script src="resources/maps.js"></script>
 	<script src="resources/text.js"></script>
 	<script src="game.js"></script>
+	<script>
+		console.log("Hey there Juan!")
+		console.log("Come back here after you beat the game 😑")
+	</script>
 </html>

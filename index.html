@@ -10,7 +10,6 @@
         <style>
             body{
                 background-color: pink;
-                color: white;
                 font-family: 'Raleway', sans-serif;
                 min-height: 100vh;
                 font-size: 40px;
@@ -32,12 +31,17 @@
         <div>
             <span class="message"></span>
         </div>
-
+        <div id="video-container"></div>
+        <div id="first-clue"></div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script>
         function wow(){
-            alert("video coming soon!")
+            /*
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            */
+            document.getElementById("video-container").innerHTML='<iframe width="560" height="315" style="margin-top: 2em" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            document.getElementById("first-clue").innerHTML='<a href="#">and once you\'re done that video...</a>'
         }
         var options = {
             strings: [
