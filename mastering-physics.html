@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>mastering physics!!!</title>
+		<meta name="description" content="the best physics site of all time">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/death-192.png">
+		<style>
+			/* this css is bad. don't judge */
+			body{
+				background-color: pink;
+                font-family: "Comic Sans MS", sans-serif;
+			}
+			button {
+				font-size: 1.5em;
+				display:inline-block;
+				color:#fff;
+				background-color: pink;
+				margin:.5rem .5rem;
+				padding:.125rem 1rem;
+				text-decoration:none;
+				border-radius:3px;
+				border-color: white;
+				line-height:1.5;
+			}
+			button:hover { 
+				text-decoration:none;
+				background-color: white;
+				color: pink;
+			}
+		</style>
+	</head>
+	<body>
+        <h1>mastering physics</h1>
+        <hr />
+        <br />
+        <p>
+            You see a runaway trolley moving toward five tied-up (or otherwise incapacitated) people lying on the tracks. You are standing next to a lever that controls a switch. If you pull the lever, the trolley will be redirected onto a side track, and the five people on the main track will be saved. However, there is a single person lying on the side track. You have two options:
+        </p>
+        <ol>
+            <li>Do nothing and allow the trolley to kill the five people on the main track.</li>
+            <li>Pull the lever, diverting the trolley onto the side track where it will kill one person.</li>
+        </ol>
+        <p>
+            Which is the more ethical option?
+        </p>
+        <form id="fat-dog">
+            <input type="number" /> minutes
+            <br />
+            <input type="submit">
+        </form>
+        <!-- NO CHEATING JUAN -->
+        <script>
+            // haha juan you thought i'd let you cheat?
+            // ROOOOOOOOKIE MOVES
+            console.log("no cheating!")
+            function fatDoggers(event){
+                event.preventDefault()
+                alert("for this puzzle, you need to think outside the box ;) look around you!")
+            }
+            var fatDog = document.getElementById("fat-dog");
+            fatDog.addEventListener('submit', fatDoggers);
+        </script>
+	</body>
+</html>
