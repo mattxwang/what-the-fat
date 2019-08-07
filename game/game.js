@@ -766,6 +766,6 @@ function winGame(){
   console.log("Wow, can't believe you actually played my crap game!")
   console.log("Anyways, I'm sure you want the clue and to know what the next puzzle is.")
   console.log("Your next clue is...")
-  console.log("Head to http://whatthefatdog.com/ to figure it out :)")
-  return "fat dog"
+  console.log(".... .- .--. .--. -.-- / -... .. .-. - .... -.. .- -.-- / .--- ..- .- -. -.-.-- / .-.. . - ... / ... . . / .. ..-. / -.-- --- ..- / -.-. .- -. / ..-. .. --. ..- .-. . / --- ..- - / .... --- .-- / - --- / --. . - / - --- / -.-- --- ..- .-. / --. .. ..-. - ... .-.-.- / .-- . .-.. .-.. --..-- / --. --- / .- .... . .- -.. / .- -. -.. / ... -- .- ... .... / - .... .. ... / .--. ..- --.. --.. .-.. . .-.-.-")
+  return "what could this mean????"
 }

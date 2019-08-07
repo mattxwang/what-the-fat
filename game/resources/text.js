@@ -5,7 +5,7 @@ var world1_text = [
       ["And you'd be right. Anyways, go get that puzzle piece with the arrow keys.", 625, 100]
     ],
     [//stage 2
-      ["You're probably slightly frustrated with all of these random games we're making you play.", 625, 75],
+      ["You're probably slightly frustrated with this game. TBH, we would be too.", 625, 75],
       ["Use the up arrow to jump and go pick up the next piece.", 625, 100]
     ],
     [//stage 3
