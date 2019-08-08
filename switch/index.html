@@ -11,24 +11,23 @@
 			/* this css is bad. don't judge */
 			body{
 				background-color: pink;
-				font-size: 32px;
 				font-family: "Comic Sans MS", sans-serif;
 			}
-			button {
+			.button {
 				font-size: 1.5em;
 				display:inline-block;
-				color:#fff;
+				color:black;
 				background-color: pink;
-				margin:.5rem .5rem;
+				margin:.5rem 0;
 				padding:.125rem 1rem;
 				text-decoration:none;
 				border-radius:3px;
-				border-color: white;
+				border-color: black;
 				line-height:1.5;
 			}
-			button:hover { 
+			.button:hover { 
 				text-decoration:none;
-				background-color: white;
+				background-color: black;
 				color: pink;
 			}
 		</style>
@@ -36,13 +35,13 @@
 	<body>
 		<h1>now, a question</h1>
 		<hr />
-        <p>
+        <p style="font-size: 32px;">
             .... .- .--. .--. -.-- / -... .. .-. - .... -.. .- -.-- / .--- ..- .- -. -.-.-- / .-.. . - ... / ... . . / .. ..-. / -.-- --- ..- / -.-. .- -. / ..-. .. --. ..- .-. . / --- ..- - / .... --- .-- / - --- / --. . - / - --- / -.-- --- ..- .-. / --. .. ..-. - ... .-.-.- / .-- . .-.. .-.. --..-- / --. --- / .- .... . .- -.. / .- -. -.. / ... -- .- ... .... / - .... .. ... / .--. ..- --.. --.. .-.. . .-.-.-
         </p>
         <form id="fat-dog">
             <input type="text" id="answer" />
             <br />
-            <input type="submit">
+            <input class="button" type="submit">
 		</form>
 		<p id="answer-response">
 			submit an answer

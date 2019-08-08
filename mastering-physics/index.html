@@ -6,28 +6,28 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>mastering physics!!!</title>
 		<meta name="description" content="the best physics site of all time">
-        <link rel="icon" type="image/png" sizes="192x192" href="img/death-192.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../img/death-192.png">
 		<style>
 			/* this css is bad. don't judge */
 			body{
 				background-color: pink;
                 font-family: "Comic Sans MS", sans-serif;
 			}
-			button {
+			.button {
 				font-size: 1.5em;
 				display:inline-block;
-				color:#fff;
+				color:black;
 				background-color: pink;
-				margin:.5rem .5rem;
+				margin:.5rem 0;
 				padding:.125rem 1rem;
 				text-decoration:none;
 				border-radius:3px;
-				border-color: white;
+				border-color: black;
 				line-height:1.5;
 			}
-			button:hover { 
+			.button:hover { 
 				text-decoration:none;
-				background-color: white;
+				background-color: black;
 				color: pink;
 			}
 		</style>
@@ -47,10 +47,13 @@
             Which is the more ethical option?
         </p>
         <form id="fat-dog">
-            <input type="number" /> minutes
+            <input type="number" id="answer" /> minutes
             <br />
-            <input type="submit">
+            <input class="button" type="submit">
         </form>
+        <p id="answer-response">
+                submit an answer
+            </p>
         <!-- NO CHEATING JUAN -->
         <script>
             // haha juan you thought i'd let you cheat?
@@ -58,7 +61,21 @@
             console.log("no cheating!")
             function fatDoggers(event){
                 event.preventDefault()
-                alert("for this puzzle, you need to think outside the box ;) look around you!")
+                var val = document.getElementById('answer').value
+				if (val === ""){
+					return
+				}
+				fetch('https://what-the-fat-server.herokuapp.com/mastering-physics', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({answer: val})
+				})
+				.then(function(response) {
+					return response.json();
+				})
+				.then(function(json) {
+					document.getElementById('answer-response').innerHTML = json.response
+				});
             }
             var fatDog = document.getElementById("fat-dog");
             fatDog.addEventListener('submit', fatDoggers);
