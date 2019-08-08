@@ -765,7 +765,6 @@ window.addEventListener("keyup", function (event) {
 function winGame(){
   console.log("Wow, can't believe you actually played my crap game!")
   console.log("Anyways, I'm sure you want the clue and to know what the next puzzle is.")
-  console.log("Your next clue is...")
-  console.log(".... .- .--. .--. -.-- / -... .. .-. - .... -.. .- -.-- / .--- ..- .- -. -.-.-- / .-.. . - ... / ... . . / .. ..-. / -.-- --- ..- / -.-. .- -. / ..-. .. --. ..- .-. . / --- ..- - / .... --- .-- / - --- / --. . - / - --- / -.-- --- ..- .-. / --. .. ..-. - ... .-.-.- / .-- . .-.. .-.. --..-- / --. --- / .- .... . .- -.. / .- -. -.. / ... -- .- ... .... / - .... .. ... / .--. ..- --.. --.. .-.. . .-.-.-")
+  console.log("Your next clue is at http://whatthefatdog.com/switch/")
   return "what could this mean????"
 }
