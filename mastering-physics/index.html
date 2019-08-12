@@ -35,30 +35,30 @@
 	<body>
         <h1>mastering physics</h1>
         <hr />
-        <br />
-        <p>
-            You see a runaway trolley moving toward five tied-up (or otherwise incapacitated) people lying on the tracks. You are standing next to a lever that controls a switch. If you pull the lever, the trolley will be redirected onto a side track, and the five people on the main track will be saved. However, there is a single person lying on the side track. You have two options:
-        </p>
-        <ol>
-            <li>Do nothing and allow the trolley to kill the five people on the main track.</li>
-            <li>Pull the lever, diverting the trolley onto the side track where it will kill one person.</li>
-        </ol>
-        <p>
-            Which is the more ethical option?
-        </p>
+		<br />
+		<div id="question">
+			<p>
+				Huan Banks is a student at USC of mass 132.277lb. He’s a brilliant student, except he never makes it to Class on time. Huan needs to rusH to Trojan Plate from Ne Deve (80m) to grab a burrito beforE he goes to class cos he’s BIG HUNGRY. 
+			</p>
+			<p>
+				(a) What speed does Huan need to run at if he reaChes T-Plate and grabs his burrito in  523699999999999.94 Svedbergs? Enter answer below. 
+			</p>
+		</div>
+		<hr />
+		<p id="answer-response">
+			submit an answer
+		</p>
         <form id="fat-dog">
-            <input type="number" id="answer" /> minutes
+            <input type="text" id="answer" /> <span id="unit">m/s</span>
             <br />
             <input class="button" type="submit">
         </form>
-        <p id="answer-response">
-                submit an answer
-            </p>
         <!-- NO CHEATING JUAN -->
         <script>
             // haha juan you thought i'd let you cheat?
             // ROOOOOOOOKIE MOVES
-            console.log("no cheating!")
+			console.log("no cheating!")
+			var questionID = "a";
             function fatDoggers(event){
                 event.preventDefault()
                 var val = document.getElementById('answer').value
@@ -68,12 +68,16 @@
 				fetch('https://what-the-fat-server.herokuapp.com/mastering-physics', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify({answer: val})
+					body: JSON.stringify({answer: val, questionID: questionID})
 				})
 				.then(function(response) {
 					return response.json();
 				})
 				.then(function(json) {
+					if (json.correct){
+						document.getElementById('question').innerHTML = document.getElementById('question').innerHTML + json.question
+						questionID = json.questionID
+					}
 					document.getElementById('answer-response').innerHTML = json.response
 				});
             }
