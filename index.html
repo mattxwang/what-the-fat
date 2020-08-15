@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>🎉 happy birthday juan!</title>
-        <meta name="description" content="it's the birthday of our favourite fat dog!">
+        <meta name="description" content="this fat dog is FINALLY legal">
         <link rel="icon" type="image/png" sizes="192x192" href="img/death-192.png">
         <style>
             body{
-                background-color: pink;
-                font-family: 'Raleway', sans-serif;
+                background-color: #C4E8B2;
+                font-family: 'Poppins', sans-serif;
                 min-height: 100vh;
                 font-size: 40px;
                 display: flex;
@@ -18,39 +18,36 @@
                 align-items: center;
                 justify-content: center;
             }
-            a {
-                color: white;
+            .button {
+                display: inline-block;
+                padding: 2rem;
+                font-size: 2rem;
+                border: 1px solid white;
+                background-color: white;
+                border-radius: 1rem;
+                color: black;
+                text-decoration: none;
             }
-            a:hover{
-                color: white;
+            .button:hover {
+                cursor: pointer;
+                background-color: #C4E8B2;
             }
         </style>
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <span class="message"></span>
-        </div>
-        <div id="video-container"></div>
-        <div id="first-clue"></div>
+        <h1>
+            🎉happy birthday Juan 🎉
+        </h1>
+        <p>
+            this year, we're doing something a little different...
+        </p>
+        <a class="button" href="/juan-pong/">
+            play pong juan
+        </a>
+        <br />
+        <a class="button" href="/juan-flappy-bird/">
+            play flappy juan
+        </a>
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script>
-        function wow(){
-            document.getElementById("video-container").innerHTML='<iframe style="margin-top: 2em" src="https://drive.google.com/file/d/1-G0yMY8CF8-kUASWJl5tc0PSXlgBevR6/preview" width="640" height="480" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-            document.getElementById("first-clue").innerHTML='<a href="game/">and once you\'re done that video...</a>'
-        }
-        var options = {
-            strings: [
-                "🎉 Happy Birthday Juan! 🎉 ^1000", 
-                "20 is a <u><b>#fat</b></u> number ^500",
-                "We're sorry we couldn't be there in-person for this huge day :( ^500",
-                "However, we still have a few things to say... ^500",
-                "<a href='#' onclick='wow()'>what are those</a>"
-            ],
-            typeSpeed: 50
-        }
-
-        var typed = new Typed(".message", options);
-    </script>
 </html>
