@@ -184,6 +184,9 @@ document.addEventListener('DOMContentLoaded', () =>  {
   //check for the number 2048 in the squares to win
   function checkForWin() {
     for (let i=0; i < squares.length; i++) {
+      if (squares[i].innerHTML == 256) {
+        resultDisplay.innerHTML = 'go to <a href="kiss-ash.txt">this file</a>'
+      }
       if (squares[i].innerHTML == 2048) {
         resultDisplay.innerHTML = 'You WIN'
         document.removeEventListener('keyup', control)
