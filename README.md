@@ -2,12 +2,16 @@
 
 > a website for our favourite fat (except not really bc he eats a million calories a day and is still skinny) dog
 
-This (poorly-coded) website was a birthday gift for our friend Juan! It's pretty simple: it features some typed-out messages (courtesy of typed.js), a poorly retrofitted pure JS/Canvas game, and some calls to a [backend server](https://github.com/malsf21/what-the-fat-server) so Juan can't cheat on certain questions.
+This is an updated version of our set of games for our amazing friend Juan's birthday! Matt (me) coded this late in the night with the help of Ellie Cheng, Sharvani Jha, and Evan Zhong as moral support :)
 
-You're welcome to play through it, though a lot of it won't make sense - it should work out of the box at [https://whatthefatdog.com](https://whatthefatdog.com).
+It currently has three Juan-modified games:
 
-If you want to develop on this, you'll need an HTTP server (because there are some fetch requests and other little things). You can easily spin one up with python:
+* 2048, improved upon from [kubowania's quick-and-dirty 2048 clone](https://github.com/kubowania/2048)
+* flappy bird, improved upon from [acm @ ucla's own flappy bird teaching exercise](https://github.com/uclaacm/tla-flappy-bird)
+* pong, improved upon from [Gabriel Dube's lovely codepen](https://codepen.io/gdube/pen/JybxxZ)
 
-```sh
-python -m SimpleHTTPServer
-```
+Prizes are hidden in each game, which requires a private key to properly decode (so even though these gifts are online, they're not usable by people who aren't Juan!)
+
+Happy birthday Juan :)
+
+(p.s., if you want to see last year's website, go to the `2019` branch)
