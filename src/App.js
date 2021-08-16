@@ -1,7 +1,7 @@
 import { useState, useEffect, useReducer } from 'react';
-import logo from './death-192.png';
 import './App.css';
 import {sounds, beats} from './data';
+import RotatingJuan from './RotatingJuan';
 import PlayButton from './PlayButton';
 
 
@@ -26,6 +26,7 @@ function App() {
 
   useEffect(() => {
     return () => audioContext !== null ? audioContext.close() : null;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
     beats.forEach((file) => {
       getSound(file.url);
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioContext]);
 
   const getSound = (url) => {
@@ -79,8 +81,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="juan's fat face rotating" />
-        {audioContext === null ? <button className="play-button" onClick={() => load()}>load</button> : <Grids />}
+        <RotatingJuan />
+        {audioContext === null ? <button className="start-button" onClick={() => load()}>load</button> : <Grids />}
       </header>
     </div>
   );

@@ -53,3 +53,8 @@ body {
   height: 4rem;
   font-size: 1.5rem;
 }
+
+.start-button {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
